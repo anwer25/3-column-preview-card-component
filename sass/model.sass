@@ -1,0 +1,46 @@
+.model
+    &-wrapper
+        margin: 8% auto
+        width: 90%
+        display: block
+        @media screen and ( min-width: 375px )
+            display: flex
+            
+    &-card
+        &-orange
+            background: $--brightOrange
+            border-radius: 0.5rem 0.5rem 0 0
+            @media screen and ( min-width: 375px )
+                border-radius: 0.5rem  0 0 0.5rem
+                
+        &-cyan
+            background: $--darkCyan
+            &-darker
+                background: $--veryDarkCyan
+                border-radius: 0 0 0.5rem 0.5rem 0
+                @media screen and ( min-width:  375px)
+                    border-radius: 0 0.5rem 0.5rem 0
+                    
+    &-submodel
+        &-card
+            width: 70%
+            margin: 0 auto
+            padding: 3.5rem 0
+            &-title
+                margin: 2rem 0
+                text-transform: uppercase
+                font-size: $--card-title-font-size
+                font-family: $--card-title-font
+            &-ph
+                line-height: 1.7
+            img:only-of-type
+                display: block
+            button:only-of-type
+                padding: 0.75rem
+                border-radius: 23px
+                border: none
+                margin: 2rem 0 0 0
+            button:only-of-type:hover
+                background-color: transparent
+                border: 1px solid $--transparentWhite
+                color: $--transparentWhite
